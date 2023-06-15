@@ -6,7 +6,7 @@ def main():
     st.set_page_config(page_title='Rickshaw Price Predictor',
                        page_icon='🛺', layout='wide')
     st.subheader("Rickshaw Price Predictor")
-    st.write("This is your go-to website for checking approximate auto rickshaw prices based on several factors for the 2 popular meter-only rickshaw cities. Auto rickshaws are a popular and reliable mean of transport for hunreds of thousands of people, knowing the fare of the ride beforehand can turn out to be very helpful. Use this website wisely!")
+    st.write("This is your go-to website for checking approximate auto rickshaw prices based on several factors for the 2 popular meter-only rickshaw cities. Auto rickshaws are a popular and reliable mean of transport for hunreds of thousands of people, knowing the fare of the ride beforehand can turn out to be very helpful.")
 
     st.write("---")
 
@@ -59,7 +59,7 @@ def main():
         st.write("You will be charged ₹1.42 for every minute of wait, hence the price is just an approximate, therefore, it is recommeneded to carry about ₹10-20 extra if your estimated waiting time is too low.")
 
         if mumbai_distance > 1.5:
-            mumbai_price = 23 + (15.33*(delhi_distance - 1.5))
+            mumbai_price = 23 + (15.33*(mumbai_distance - 1.5))
         else:
             mumbai_price = 23
         if mumbai_night:
